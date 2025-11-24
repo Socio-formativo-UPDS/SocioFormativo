@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albergue Patitas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Centro de Adopción Albergue Patitas</h1>
+    </header>
+
+    <section class="menu">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#voluntarios">Voluntarios</a></li>
+                <li><a href="#adoptame">Adóptame</a></li>
+                <li><a href="#donaciones">Donaciones</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <main>
+        <section class="imagen">
+            <div class="carrusel">
+                <div class="carrusel_images">
+                    <img src="imagenes/perrito1.jpeg" alt="Perritos felices en el albergue">
+                    <img src="imagenes/perrito2.jpg" alt="Voluntarios jugando con cachorros">
+                    <img src="imagenes/perrito3.jpg" alt="Adopciones exitosas">
+                    <img src="imagenes/perrito4.jpg" alt="Paseando en el parque del albergue">
+                    <img src="imagenes/perrito5.jpeg" alt="Nuestros rescatados listos para un hogar">
+                </div>
+                <button class="ant" onclick="moverCarrusel(-1)">⬅</button>
+                <button class="sig" onclick="moverCarrusel(1)">➡</button>
+                <div class="dots"></div>
+            </div>
+        </section>
+
+        <section class="info">
+            <ul>
+                <li><p>43</p>adoptados</li>
+                <li><p>12</p>en adopción</li>
+                <li><p>8</p>voluntarios</li>
+            </ul>
+        </section>
+
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenidos al Albergue Patitas, un refugio dedicado al corazón de Bolivia donde rescatamos, curamos y damos amor a perritos abandonados hasta encontrarles una familia para siempre. Cada ladrido aquí es una historia de esperanza. </p>
+            <h3>¿Quiénes somos?</h3>
+            <p>Somos un grupo de voluntarios bolivianos que desde 2018 luchando contra el abandono y maltrato animal. Esterilizamos, vacunamos y rehabilitamos a cientos de perritos callejeros para que tengan una segunda oportunidad. ¡Tu apoyo hace la diferencia!</p>
+        </section>
+
+        <section id="voluntarios">
+            <h2>Voluntarios</h2>
+            <h3>¿Cómo ser voluntario en nuestro albergue?</h3>
+            <p>¡Es súper fácil! Solo tienes que escribirnos por Instagram, Facebook o WhatsApp y decirnos: “Quiero ayudar”. 
+               No importa tu edad (si eres menor de edad, puedes venir acompañado de un adulto), no necesitas experiencia previa ni estudios especiales. 
+               Lo único que sí necesitamos es tu corazón grande y muchas ganas de hacer la diferencia. 
+               Te daremos una pequeña inducción el primer día, te presentaremos a los peluditos y desde ahí ya formas parte de la familia Patitas. 
+               Puedes venir los fines de semana, entre semana después del trabajo o la universidad, o incluso solo unas horitas al mes… 
+               ¡cada minuto que nos regales es oro para ellos!</p>
+            <h3>Tareas principales de voluntario</h3>
+            <ol>
+                <li><p>Alimentar, limpiar y cuidar a los perritos todos los días.</p></li>
+                <li><p>Sacar a pasear y socializar para que estén listos para su nuevo hogar.</p></li>
+                <li><p>Ayudar en ferias de adopción y tomar fotos lindas.</p></li>
+            </ol>
+        </section>
+        <section id="adoptame">
+            <h2>Adóptame</h2>
+            <p>Aquí no tienes “perros en adopción aquí tienes futuros mejores amigos que llevan meses (o años) soñando con alguien como tú.  Cada foto que ves es un corazón que late fuerte detrás de esos ojitos: alguien que fue abandonado, maltratado o simplemente olvidado, pero que nunca dejó de creer que un día llegaría su familia de verdad.</p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="imagenes/tamalito.jpg" alt="Tamalito">
+                    <h2>Tamalito</h2>
+                    <p>Mestizo mediano │ 2 años │ Macho<br>Super juguetón y guardián. Rescatado en el Ende.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/flepe.jpeg" alt="flepe">
+                    <h2>flepe</h2>
+                    <p>Mestiza pequeña │ 1 año │ Hembra<br>Dulce y mimosa, ideal para departamentos.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/panchito.jpg" alt="Panchito">
+                    <h2>Panchito</h2>
+                    <p>Mestizo │ 3 años │ Macho<br>El más cariñoso del albergue. Le encanta dormir la siesta contigo.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/canelita.jpg" alt="Canelita">
+                    <h2>Canelita</h2>
+                    <p>Mestiza color canela │ 1.5 años │ Hembra<br>Muy inteligente, ya sabe sentarse y dar la pata.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/negro.jpg" alt="Negro">
+                    <h2>Negro</h2>
+                    <p>Mestizo grande │ 4 años │ Macho<br>Tranquilo y noble. Perfecto compañero para casa con patio.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/blanquita.jpg" alt="Blanquita">
+                    <h2>Blanquita</h2>
+                    <p>Mestiza pequeña │ 2 años │ Hembra<br>Tímida al principio, pero luego no se separa de ti.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/firulais.jpg" alt="Firulais">
+                    <h2>Firulais</h2>
+                    <p>Mestizo mediano │ 2 años │ Macho<br>Siempre feliz y mueve la cola sin parar.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/princesa.jpg" alt="Princesa">
+                    <h2>Princesa</h2>
+                    <p>Mestiza │ 1 año │ Hembra<br>Pequeña, elegante y super mimosa. Se lleva bien con niños.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/cholito.jpg" alt="Cholito">
+                    <h2>Cholito</h2>
+                    <p>Mestizo mediano │ 3 años │ Macho<br>Rescatado en Zurapata. Protector y muy leal.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/humintita.jpg" alt="Humintita">
+                    <h2>Humintita</h2>
+                    <p>Mestiza │ 2 años │ Hembra<br>Color café claro, ojos expresivos. Ama los abrazos.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/boby.jpg" alt="Boby">
+                    <h2>Boby</h2>
+                    <p>Pitbull mix │ 3 años │ Macho<br>Dulce, mal entendido. Solo quiere amor y caricias.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+
+                <div class="card">
+                    <img src="imagenes/nieves.jpg" alt="Nieves">
+                    <h2>Nieves</h2>
+                    <p>Mestiza blanca │ 1 año │ Hembra<br>Cachorrita juguetona que le encanta correr detrás de la pelota.</p>
+                    <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
+                </div>
+            </div>
+            <p>Mira sus fotos otra vez. Detente en esos ojos. Uno de ellos ya te eligió desde que subimos su foto.</p>
+        </section>
+
+        <section id="donaciones">
+            <h2>Donaciones</h2>
+            <p>Cada boliviano que donas se transforma en comida, vacunas y esterilizaciones. También recibimos croquetas, medicamentos, frazadas y artículos de limpieza. ¡Gracias por ser la patita que nos ayuda a seguir!</p>
+            <ul>
+                <li>Comida (Croquetas o verduras)</li>
+                <li>medicamentos</li>
+                <li>juguetes</li>
+                <li>utensilios para mascotas (Colchones, frazadas, platos, etc.)</li>
+                <li>Articulos de limpieza</li>
+            </ul>
+        </section>
+
+        <section id="ubicacion">
+            <h2>Nuestra Ubicación</h2>
+            <div id="mapa">Cargando mapa...</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Albergue Patitas - Todos los derechos reservados</p>
+        <div class="Redes">
+            <a href="https://www.instagram.com/" target="_blank"><img src="imagenes/insta.png" class="icono" width="20px"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="imagenes/facebook.png" class="icono" width="20px"></a>
+            <a href="https://x.com/" target="_blank"><img src="imagenes/X.png" class="icono" width="20px"></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

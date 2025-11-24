@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Patitas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="form_container">
+        <div class="form_header">
+            <h1>¡Quiero adoptar!</h1>
+            <p>Completa este formulario y muy pronto te contactaremos</p>
+        </div>
+        <form action="#" method="POST"> 
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo </label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Telefono / WhatsApp </label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+            </div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">Edad </label>
+                    <input type="number" id="edad" name="edad" min="18" max="100" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Direccion completa </label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                <label>Tipo de vivienda </label>
+                <div class="radio-group">
+                    <label><input type="radio" name="vivienda" value="casa-patio" required> Casa con patio</label>
+                    <label><input type="radio" name="vivienda" value="casa-sin"> Casa sin patio</label>
+                    <label><input type="radio" name="vivienda" value="departamento"> Departamento</label>
+                    <label><input type="radio" name="vivienda" value="otro"> Otro</label>
+                </div>
+            </div>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>¿Hay niños en casa?</label>
+                    <select name="ninos">
+                        <option value="no">No</option>
+                        <option value="menores">Sí, menores de 10 años</option>
+                        <option value="mayores">Sí, mayores de 10 años</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>¿Tienes otras mascotas?</label>
+                    <select name="mascotas">
+                        <option value="no">No</option>
+                        <option value="perro">Sí, perro(s)</option>
+                        <option value="gato">Sí, gato(s)</option>
+                        <option value="ambos">Sí, perros y gatos</option>
+                        <option value="otros">Sí, otros</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="motivo">¿Por que quieres adoptar? </label>
+                <br><br>
+                <textarea id="motivo" name="motivo" rows="5" placeholder="Cuentanos un poquito sobre ti y tu familia..."></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="acepto" name="acepto" required>
+                <label for="acepto">Acepto visita domiciliaria y seguimiento post-adopcion </label>
+            </div>
+            <button type="submit" class="btn-adoptar">Enviar solicitud de adopción</button>
+        </form>
+    </div>
+</body>
+</html>
