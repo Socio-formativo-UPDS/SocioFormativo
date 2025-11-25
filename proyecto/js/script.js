@@ -53,3 +53,31 @@ document.addEventListener("DOMContentLoaded", function() {
         </iframe>
     `;
 });
+const cards = document.querySelectorAll('.card');
+const cardsPorPagina = 4;
+const totalPaginas = Math.ceil(cards.length / cardsPorPagina);
+let paginaActual = 1;
+
+function mostrarPagina(pagina) {
+    cards.forEach((card, index) => {
+        card.style.display = (index >= (pagina - 1) * cardsPorPagina && index < pagina * cardsPorPagina) ? 'block' : 'none';
+    });
+    document.querySelectorAll('.pagination .page-item').forEach((item, idx) => {
+        if (idx === 0) return; 
+        if (idx === totalPaginas + 1) return; 
+        item.classList.toggle('active', (idx === pagina));
+    });
+
+    document.querySelector('.pagination .page-item:first-child').classList.toggle('disabled', pagina === 1);
+    document.querySelector('.pagination .page-item:last-child').classList.toggle('disabled', pagina === totalPaginas);
+}
+
+function cambiarPagina(event, direccion) {
+    event.preventDefault();
+    if (direccion === -1 && paginaActual > 1) paginaActual--;
+    else if (direccion === 1 && paginaActual < totalPaginas) paginaActual++;
+    else if (Number.isInteger(direccion)) paginaActual = direccion; // Para clics en números
+    mostrarPagina(paginaActual);
+}
+
+mostrarPagina(1);

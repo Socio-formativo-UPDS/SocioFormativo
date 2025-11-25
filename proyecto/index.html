@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Albergue Patitas</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header>
@@ -160,6 +161,24 @@
                     <a href="form.html" target="_blank"><button>¡Adóptame!</button></a>
                 </div>
             </div>
+            <nav aria-label="Paginación de tarjetas de adopción" class="d-flex justify-content-center mt-4">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" aria-label="Previous" onclick="cambiarPagina(event, -1)">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#" onclick="cambiarPagina(event, 1)">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#" onclick="cambiarPagina(event, 2)">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#" onclick="cambiarPagina(event, 3)">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next" onclick="cambiarPagina(event, 1)">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
             <p>Mira sus fotos otra vez. Detente en esos ojos. Uno de ellos ya te eligió desde que subimos su foto.</p>
         </section>
 
