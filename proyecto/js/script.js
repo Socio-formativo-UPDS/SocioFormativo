@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
 });
 const cards = document.querySelectorAll('.card');
-const cardsPorPagina = 4;
+const cardsPorPagina = 3;
 const totalPaginas = Math.ceil(cards.length / cardsPorPagina);
 let paginaActual = 1;
 
